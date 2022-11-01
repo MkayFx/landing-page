@@ -1,0 +1,318 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+=======================================
+Custom Styles
+=======================================
+*/
+* {
+    box-sizing: border-box;
+}
+body{
+    background: #A67437;
+    color: #F2E6CE;
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+
+/*
+=======================================
+Header
+=======================================
+*/
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.primary-nav {
+    margin: 10px 0 40px 0;
+}
+.primary-nav div{
+    width: 48%;
+    display: inline-block;
+}
+
+.primary-nav .logo{
+    position: relative;
+}
+
+.logo p{
+    position: absolute;
+    top: -1rem;
+    left: 4rem;
+    font-size: 3rem;
+    color: black;
+    font-family: 'Comforter Brush', cursive;
+}
+
+.primary-nav li{
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.primary-nav a{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    text-decoration: none;
+    color: #F2E6CE;
+    color: black;
+}
+
+.primary-nav a:hover{
+    color: #D9BF8F;
+    font-size: large;
+}
+
+.nav-cont{
+    width: 100%;
+    min-height: 300px;
+}
+
+.nav-text, .ph{
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+    color: black;
+    
+}
+
+.ph{
+    background: url(img/Placeholder.jpg);
+    min-height: 300px;
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 15px;
+    opacity: 0.8;
+}
+
+/*.ph img{
+    width: 100%;
+    height: 50%;
+}*/
+
+.nav-text h2{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    font-style: italic;
+}
+
+.nav-text p{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
+.nav-text div{
+    font-size: large;
+    font-weight: 300;
+    border: 1px solid #F2E6CE;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
+    color: #F2E6CE;
+}
+
+.nav-text div:hover{
+    background: #D9BF8F;
+    cursor: pointer;
+    border-radius: 5px;
+    color: grey;
+    font-family: 'Comforter Brush', cursive;
+    color: black;
+    font-size: 1.5rem;
+}
+
+/*
+=======================================
+Main
+=======================================
+*/
+main {
+    background: #F2E6CE;
+    color: #733614;
+}
+.main {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.main-text {
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(200px, 300px);
+    grid-gap: 20px;
+    padding-bottom: 100px;
+}
+
+.card div:nth-child(2) {
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card h6{
+    font-size: larger;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.card {
+    border: 1px solid #733614;
+    box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 0.4);
+}
+
+.card:hover{
+    box-shadow: 2px 2px 4px 2px rgba(40, 40, 40, 0.5);
+}
+
+/*
+=======================================
+Section
+=======================================
+*/
+
+section{
+    background: #D9BF8F;
+    color: black;
+    min-height: 250px;
+}
+
+section div{
+    width: 80%;
+    margin: 0px auto;
+}
+
+section p {
+    text-align: right;
+}
+
+/*
+=======================================
+Footer
+=======================================
+*/
+footer{
+    background: #F2E6CE;
+    color: #733614;
+}
+
+.copy{
+    text-align: center;
+}
+
+footer > div{
+    width: 80%;
+    padding-top: 25px;
+    margin: 0 auto;
+    min-height: 200px;
+    color: black
+}
+
+/*footer .wrap{
+    /*background: #733614;
+    min-height: 150px;
+    color: black;
+    text-align: center;
+}*/
+
+.sign-up {
+    width: 65%;
+    text-align: center;
+    display: inline-block;
+}
+
+footer .button{
+    width: 30%;
+    display: inline-block;
+}
+
+footer .btn {
+    margin: 0px auto;
+    margin-top: 50px;
+    border: 1px solid #733614;
+}
+
+footer .btn:hover{
+    background: #733614;
+    color: #D9BF8F;
+}
+
+.btn {
+    font-size: large;
+    font-weight: 300;
+    text-align: center;
+    width: 150px;
+    padding: 20px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Comforter Brush', cursive;
+    color: black;
+    font-size: 1.5rem;
+}
+
